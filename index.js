@@ -4,6 +4,7 @@ const consentForm = document.querySelector("#consent-form");
 const modalText = document.querySelector("#modal-text");
 const modalInner = document.querySelector("#modal-inner");
 const declineBtn = document.querySelector("#decline-btn");
+const modalChoiceBtns = document.querySelector("#modal-choice-btns");
 
 
 setTimeout(function () {
@@ -15,7 +16,7 @@ modalCloseBtn.addEventListener("click", function () {
 });
 
 declineBtn.addEventListener('mouseenter', function(){
-  console.log("hovered");
+  modalChoiceBtns.classList.toggle("modal-choice-btns-reverse");
 })
 
 consentForm.addEventListener("submit", function(event){
