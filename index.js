@@ -36,7 +36,7 @@ document.getElementById("uploadText").innerText = `Making the sale...`;
 
 setTimeout(function(){
 
-  
+  modalCloseBtn.disabled = false;
   modalInner.innerHTML = `
    <h2>Thanks  <span class="modal-display-name">${fullName}</span>,you sucker! </h2>
     <p>We just sold the rights to your eternal soul.</p>
