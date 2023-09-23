@@ -3,6 +3,7 @@ const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.querySelector("#consent-form");
 const modalText = document.querySelector("#modal-text");
 const modalInner = document.querySelector("#modal-inner");
+const declineBtn = document.querySelector("#decline-btn");
 
 
 setTimeout(function () {
@@ -12,6 +13,10 @@ setTimeout(function () {
 modalCloseBtn.addEventListener("click", function () {
   modal.style.display = "none";
 });
+
+declineBtn.addEventListener('mouseenter', function(){
+  console.log("hovered");
+})
 
 consentForm.addEventListener("submit", function(event){
   event.preventDefault();
@@ -45,6 +50,7 @@ setTimeout(function(){
     </div>
     
   `;
+  
 },3000);
 
 })
